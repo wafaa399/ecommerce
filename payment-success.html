@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce - Payment Success</title>
+
+    <!-- Bootstrap CSS عبر CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons عبر CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- ملف CSS الخاص بك -->
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-white">
+    <!-- Top Announcement Bar -->
+     <header>
+      <!-- Notification Bar -->
+      <div class="notification-bar">
+        <span>Get 25% OFF on your first order.</span>
+        <a href="#">Order Now</a>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg main-navbar bg-white">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <span class="brand-icon"
+              ><svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="20" fill="#0E1422" />
+                <path
+                  d="M24.4769 11.3485L18.204 7.55509C17.6119 7.19292 16.9388 7.0015 16.2532 7.00031C14.2094 7.00031 12.3348 8.71225 12.3348 11.105V25.3073L24.4769 17.9669C26.9083 16.4947 26.9083 12.82 24.4769 11.3485ZM15.8484 18.448V10.8679L22.1163 14.6567L15.8484 18.448Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.8489 32.9844C27.8489 33.0273 15.9908 32.966 15.9908 32.966L14.9434 32.8425C13.2467 32.644 11.9443 31.1233 12.002 29.3346C12.002 29.2917 12.0057 29.2519 12.0081 29.2103C12.0547 28.4365 12.3261 27.6961 12.7858 27.0885C12.9725 26.8461 13.2009 26.6425 13.4592 26.4882L22.4782 21.0725C24.3414 19.9535 25.8931 19.562 26.6999 17.5341C26.9974 16.7757 27.126 15.9562 27.0757 15.1379L27.0446 14.5865L27.9651 19.9204C28.083 20.8264 27.9013 21.7537 27.4211 22.5169C27.1326 22.9785 26.7475 23.3653 26.2951 23.6479L15.8295 28.8943C15.8191 28.9006 15.809 28.9074 15.7993 28.9149C15.5127 29.1293 15.6896 29.6069 16.0403 29.5867L24.7515 29.6403C26.4433 29.5417 27.8526 31.2112 27.8489 32.9844Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            Ecommerce
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbarContent">
+            <!-- Menu Links -->
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 align-items-lg-center"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="listing.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="listing.html?gender=men">Men</a></li>
+                  <li><a class="dropdown-item" href="listing.html?gender=women">Women</a></li>
+                  <li><a class="dropdown-item" href="listing.html?category=accessories">Accessories</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Search Box -->
+
+
+
+<form class="d-flex search-box me-lg-3 mb-2 mb-lg-0" role="search">
+  <div class="input-group">
+    <span class="input-group-text">
+      <i class="bi bi-search"></i>
+    </span>
+    <input
+      type="search"
+      class="form-control"
+      placeholder="Search products"
+    />
+  </div>
+</form>
+<!-- Icons -->
+<div class="d-flex align-items-center gap-2">
+  <a href="#" class="icon-btn" aria-label="Cart">
+    <i class="bi bi-cart3"></i>
+  </a>
+  <a href="#" class="icon-btn" aria-label="My Account">
+    <i class="bi bi-person"></i>
+  </a>
+</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <div class="bg-light py-4 mb-5">
+      <div class="container">
+        <h4 class="fw-bold mb-1">Order Confirmation</h4>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 small">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-secondary text-decoration-none">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="checkout.html" class="text-secondary text-decoration-none"
+                >Checkout</a
+              >
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Confirmation
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Success Message Header -->
+    <div class="container text-center mb-5">
+      <div
+        class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-circle mb-3"
+        style="width: 56px; height: 56px"
+      >
+        <i class="bi bi-check-lg fs-3"></i>
+      </div>
+      <h2 class="fw-bold mb-2">Payment Successful!</h2>
+      <p class="text-muted small mb-2">
+        Your order has been confirmed and is being processed.
+      </p>
+      <p class="text-muted small fw-medium">Order <span id="orderNumber">#—</span></p>
+    </div>
+
+    <!-- Main Content: Order Summary & Details -->
+    <div class="container mb-5">
+      <div class="row g-5">
+        <!-- Left Column: Order Summary -->
+        <div class="col-lg-6 border-end-lg">
+          <h5 class="fw-bold mb-4">Order Summary</h5>
+
+          <!-- Product Items (filled from the placed order) -->
+          <div id="orderItemsList"></div>
+
+          <!-- Pricing Totals -->
+          <div class="d-flex justify-content-between text-muted small mb-2">
+            <span>Subtotal</span>
+            <span class="text-dark fw-medium" id="psSubtotal">$0.00</span>
+          </div>
+          <div class="d-flex justify-content-between text-muted small mb-2">
+            <span>Shipping</span>
+            <span class="text-dark fw-medium" id="psShipping">Free</span>
+          </div>
+          <div class="d-flex justify-content-between text-muted small mb-4">
+            <span>Tax</span>
+            <span class="text-dark fw-medium" id="psTax">$0.00</span>
+          </div>
+          <div
+            class="d-flex justify-content-between fw-bold fs-5 pt-3 border-top"
+          >
+            <span>Total</span>
+            <span id="psTotal">$0.00</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Information -->
+        <div class="col-lg-6">
+          <h5 class="fw-bold mb-4">Order Information</h5>
+
+          <!-- Shipping Address Section -->
+          <div class="mb-4">
+            <div
+              class="d-flex align-items-center gap-2 text-muted extra-small text-uppercase fw-bold mb-2"
+            >
+              <i class="bi bi-geo-alt"></i>
+              <span>Shipping Address</span>
+            </div>
+            <p class="mb-0 small fw-medium text-dark" id="psShipName">—</p>
+            <p class="mb-0 small text-muted" id="psShipStreet">—</p>
+            <p class="mb-0 small text-muted" id="psShipCityLine">—</p>
+            <p class="mb-0 small text-muted" id="psShipCountry">—</p>
+          </div>
+
+          <!-- Payment Method Section -->
+          <div class="mb-4">
+            <div
+              class="d-flex align-items-center gap-2 text-muted extra-small text-uppercase fw-bold mb-2"
+            >
+              <i class="bi bi-credit-card"></i>
+              <span>Payment Method</span>
+            </div>
+            <p class="mb-1 small text-muted" id="psPayment">—</p>
+            <span
+              class="badge bg-success-subtle text-success border border-success-subtle rounded-pill fw-normal px-2 extra-small"
+            >
+              <i class="bi bi-check me-1"></i>Paid
+            </span>
+          </div>
+
+          <!-- Order Details Section -->
+          <div class="mb-4">
+            <div
+              class="d-flex align-items-center gap-2 text-muted extra-small text-uppercase fw-bold mb-2"
+            >
+              <i class="bi bi-calendar3"></i>
+              <span>Order Details</span>
+            </div>
+            <div class="row g-2 small">
+              <div class="col-6 text-muted">Order Date</div>
+              <div class="col-6 text-end fw-medium text-dark" id="psOrderDate">
+                —
+              </div>
+              <div class="col-6 text-muted">Est. Delivery</div>
+              <div class="col-6 text-end fw-medium text-dark" id="psDelivery">
+                —
+              </div>
+              <div class="col-6 text-muted">Order Status</div>
+              <div class="col-6 text-end">
+                <span
+                  class="badge bg-success-subtle text-success border border-success-subtle rounded-pill fw-normal px-2 extra-small"
+                  >Confirmed</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Section -->
+          <div class="mb-4">
+            <div
+              class="d-flex align-items-center gap-2 text-muted extra-small text-uppercase fw-bold mb-2"
+            >
+              <i class="bi bi-person"></i>
+              <span>Customer</span>
+            </div>
+            <p class="mb-0 small fw-medium text-dark" id="psCustName">—</p>
+            <p class="mb-0 small text-muted" id="psCustEmail">—</p>
+            <p class="mb-0 small text-muted d-none" id="psCustPhone"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Action Buttons -->
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-center gap-3 mt-5 pt-4"
+      >
+        <a href="index.html" class="btn btn-dark px-4 py-2 fw-medium"
+          >Continue Shopping</a
+        >
+        <a href="#" id="trackOrder" class="btn btn-outline-secondary px-4 py-2 fw-medium"
+          ><i class="bi bi-arrow-clockwise me-2"></i>Track Order</a
+        >
+        <a
+          href="#"
+          id="orderHistory"
+          class="btn btn-link text-decoration-none text-secondary px-3 py-2 fw-medium"
+          >View Order History</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-4 mt-auto border-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">
+              <i class="bi bi-box-seam me-2"></i>Ecommerce
+            </h5>
+            <p class="text-muted small">
+              DevCut is a YouTube channel for practical project-based learning.
+            </p>
+            <div class="d-flex gap-3 text-muted">
+              <i class="bi bi-github fs-5"></i>
+              <i class="bi bi-instagram fs-5"></i>
+              <i class="bi bi-youtube fs-5"></i>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3 text-uppercase small">Support</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary">FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Terms of use</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3 text-uppercase small">Company</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >About us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3 text-uppercase small">Shop</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >My Account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Checkout</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary">Cart</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3 text-uppercase small">Accepted Payments</h6>
+            <div class="d-flex gap-2 flex-wrap">
+              <span class="badge bg-secondary">Mastercard</span>
+              <span class="badge bg-primary">AMEX</span>
+              <span class="badge bg-dark">VISA</span>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 text-muted opacity-25" />
+        <p class="text-center text-muted small mb-0">
+          &copy; 2026 DevCut. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle عبر CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/payment-success.js"></script>
+  </body>
+</html>

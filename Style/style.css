@@ -1,0 +1,259 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+}
+h1,
+h2,
+.serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* =========================================
+   Notification Bar
+   ========================================= */
+
+.notification-bar {
+  background-color: #0E1422;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.notification-bar a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+/* =========================================
+   Navbar
+   ========================================= */
+
+.main-navbar {
+  padding: 16px 0;
+}
+
+.main-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #0E1422;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main-navbar .nav-link {
+  color: #5C5F6A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-navbar .nav-link:hover {
+  color: #0E1422;
+}
+
+.search-box {
+  max-width: 220px;
+}
+
+.search-box .input-group-text,
+.search-box .form-control {
+  background-color: #f4f4f5;
+  border: none;
+  font-size: 13px;
+}
+
+.search-box .form-control {
+  box-shadow: none;
+}
+
+.search-box .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0E1422;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: #0E1422;
+  color: #fff;
+  border-color: #0E1422;
+}
+ /* Page Title Banner */
+    .page-title-banner {
+      background-color: #f4f4f5;
+      padding: 40px 0;
+    }
+ 
+    .page-title-banner h1 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+ 
+    .breadcrumb-nav {
+      font-size: 13px;
+      color: #6b7280;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+ 
+    .breadcrumb-nav .current {
+      color: #0E1422;
+      font-weight: 600;
+    }
+ 
+/* =========================================
+   Footer
+   ========================================= */
+
+.site-footer {
+  padding: 60px 0 0;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0E1422;
+  text-decoration: none;
+}
+
+.footer-logo-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-logo-icon svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.site-footer p {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.footer-social {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0E1422;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.footer-social:hover {
+  background-color: #0E1422;
+  border-color: #0E1422;
+}
+
+.footer-heading {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #6b7280;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #0E1422;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-icon-placeholder {
+  width: 42px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-icon-placeholder svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+}
+
